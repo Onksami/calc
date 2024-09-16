@@ -16,6 +16,10 @@ function App() {
     setResult(num1 + num2);
   };
 
+  const resetApp = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="calculator">
       <Header />
@@ -30,7 +34,10 @@ function App() {
         onChange={setSecondInput}
         placeholder="second input"
       />
-      <Button onClick={() => addNumbers(firstInput, secondInput)} />
+      <Button onClick={() => addNumbers(firstInput, secondInput)}>
+        Calculate
+      </Button>
+      <Button onClick={resetApp}>Reset</Button>
       <Screen result={result} />
     </div>
   );

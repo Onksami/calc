@@ -28,7 +28,7 @@ function App() {
         onChange={setFirstInput}
         placeholder="first input"
       />
-      <h1>+</h1>
+      <h4>+</h4>
       <Input
         value={secondInput}
         onChange={setSecondInput}

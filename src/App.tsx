@@ -34,10 +34,13 @@ function App() {
         onChange={setSecondInput}
         placeholder="second input"
       />
-      <Button onClick={() => addNumbers(firstInput, secondInput)}>
-        Calculate
-      </Button>
-      <Button onClick={resetApp}>Reset</Button>
+      <div className="btn">
+        <Button onClick={() => addNumbers(firstInput, secondInput)}>
+          Calculate
+        </Button>
+        <Button onClick={resetApp}>Reset</Button>
+      </div>
+
       <Screen result={result} />
     </div>
   );
